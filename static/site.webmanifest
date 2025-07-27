@@ -1,0 +1,35 @@
+{
+    "name": "Shajid Hasan",
+    "short_name": "sh4jid",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "orientation": "portrait-primary",
+    "description": "Fullstack dev & mechanical engineering student sharing projects, programming tips, and ideas, mixing tech, creativity, and curiosity.",
+    "scope": "/",
+    "lang": "en",
+    "categories": [
+        "productivity",
+        "education",
+        "developer"
+    ],
+    "id": "/",
+    "prefer_related_applications": false
+}

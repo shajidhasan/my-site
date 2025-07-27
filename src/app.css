@@ -1,0 +1,110 @@
+@import 'tailwindcss';
+@plugin '@tailwindcss/typography';
+@plugin 'tailwind-scrollbar';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+    font-family: 'Inter';
+    src: url("$lib/assets/fonts/InterVariable.woff2") format('woff2');
+    font-display: swap;
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter Fallback';
+    src: local("Arial");
+    ascent-override: 89.79%;
+    descent-override: 22.36%;
+    line-gap-override: 0.00%;
+    size-adjust: 107.89%;
+}
+
+
+@theme {
+    --font-sans: 'Inter', 'Inter Fallback', system-ui, sans-serif;
+    --font-mono: 'Space Mono', monospace;
+    --font-bengali: 'Baloo Da 2 Variable', system-ui;
+
+    --color-gray-50: oklch(0.985 0 0);
+    --color-gray-100: oklch(0.967 0.001 286.375);
+    --color-gray-200: oklch(0.92 0.004 286.32);
+    --color-gray-300: oklch(0.871 0.006 286.286);
+    --color-gray-400: oklch(0.705 0.015 286.067);
+    --color-gray-500: oklch(0.552 0.016 285.938);
+    --color-gray-600: oklch(0.442 0.017 285.786);
+    --color-gray-700: oklch(0.37 0.013 285.805);
+    --color-gray-800: oklch(0.274 0.006 286.033);
+    --color-gray-900: oklch(0.21 0.006 285.885);
+    --color-gray-950: oklch(0.141 0.005 285.823);
+}
+
+@layer base {    
+    html {
+        overflow-y: scroll;
+        font-feature-settings: "cv02","cv03","cv04","cv11";
+    }
+
+    @supports (scrollbar-gutter: stable) {
+        html {
+            overflow-y: auto;
+            scrollbar-gutter: stable;
+        }
+    }
+    
+    body {
+        @apply scroll-smooth bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 antialiased;
+    }
+
+    a.link {
+        position: relative;
+        background: 
+            linear-gradient(
+                to top,
+                color-mix(in oklab, var(--color-rose-500) 60%, transparent),
+                color-mix(in oklab, var(--color-rose-500) 60%, transparent)
+            );
+        background-repeat: no-repeat;
+        background-position: 0 100%;
+        background-size: 100% calc(var(--spacing) * 2);
+        
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+        
+        padding: 0 calc(var(--spacing) * 0.5);
+        margin: 0 calc(var(--spacing) * -0.5);
+        
+        transition: background-size 150ms ease-in-out;
+    }
+
+    a.link:hover {
+        background-size: 100% calc(100% + var(--spacing) * 0.5);
+    }
+
+    .shiki {
+        @apply rounded-lg overflow-x-auto min-h-[200px] py-4 scrollbar scrollbar-thumb-gray-700 scrollbar-track-transparent;
+    }
+
+    html.dark .shiki,
+    html.dark .shiki span {
+        color: var(--shiki-dark) !important;
+        background-color: var(--shiki-dark-bg) !important;
+        /* Optional, if you also want font styles */
+        font-style: var(--shiki-dark-font-style) !important;
+        font-weight: var(--shiki-dark-font-weight) !important;
+        text-decoration: var(--shiki-dark-text-decoration) !important;
+    }
+
+    .prose img {
+        @apply rounded-lg block mx-auto;
+    }
+
+    #nprogress .bar {
+        @apply bg-white!
+    }
+
+    main {
+        @apply min-h-[calc(100vh_-_172px)] sm:min-h-[calc(100vh_-_148px)];
+    }
+}
