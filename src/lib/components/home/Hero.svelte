@@ -11,11 +11,6 @@
 			icon: GithubIcon
 		},
 		{
-			href: 'https://facebook.com/shajidhasan/',
-			ariaLabel: 'Shajid Hasan on Facebook',
-			icon: FacebookIcon
-		},
-		{
 			href: 'https://x.com/sh4jid',
 			ariaLabel: 'Shajid Hasan on X (formerly Twitter)',
 			icon: XIcon
