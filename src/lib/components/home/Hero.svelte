@@ -1,6 +1,5 @@
 <script lang="ts">
 	import GithubIcon from '@icons-pack/svelte-simple-icons/icons/SiGithub';
-	import FacebookIcon from '@icons-pack/svelte-simple-icons/icons/SiFacebook';
 	import XIcon from '@icons-pack/svelte-simple-icons/icons/SiX';
 	import LinkedInIcon from '$lib/components/icons/LinkedIn.svelte';
 
