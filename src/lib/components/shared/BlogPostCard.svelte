@@ -6,8 +6,8 @@
 </script>
 
 <article
-	class="flex flex-col overflow-hidden rounded-lg border border-gray-200 bg-white transition-all duration-300 hover:-translate-y-0.5
-                   hover:border-gray-300 hover:shadow-xl hover:shadow-gray-100/20 dark:border-gray-700
+	class="flex flex-col overflow-hidden rounded-lg border border-transparent bg-white transition-all duration-300 hover:-translate-y-0.5
+                   hover:border-gray-300 hover:shadow-xl hover:shadow-gray-100/20
                    dark:bg-gray-800 dark:hover:border-gray-600 dark:hover:shadow-2xl dark:hover:shadow-black/25"
 >
 	<a href="/blog/{post.slug}" class="block">
