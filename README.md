@@ -20,7 +20,7 @@ My personal portfolio and blog, built with SvelteKit, TypeScript, and Tailwind C
 
 > **Note on Content Management**
 >
-> All dynamic content (blog posts, short links, notes, and pastes) is managed through a separate, dedicated admin dashboard that interacts with the Appwrite backend. You can find the repository for the admin panel here: **[my-site-control-center](https://github.com/shajidhasan/my-site-control-center)**.
+> All dynamic content (blog posts, short links, notes, and pastes) is managed through a separate, dedicated admin dashboard that interacts with the Appwrite backend. You can find the repository for the admin panel here: **[my-site-control-center](https://github.com/shajidhasan/my-site-cc)**.
 
 ## Tech Stack
 
