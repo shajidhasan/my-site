@@ -66,7 +66,7 @@
 			</div>
 
 			<!-- Meta Information -->
-			<div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+			<div class="flex flex-col gap-4">
 				<div class="flex flex-wrap items-center gap-2 text-sm text-gray-500 dark:text-gray-400">
 					<time datetime={date} class="whitespace-nowrap">{formatDate(date)}</time>
 					<span>•</span>
@@ -75,18 +75,37 @@
 					<span class="whitespace-nowrap">By Shajid Hasan</span>
 				</div>
 
-				<!-- Tags -->
-				{#if tags.length > 0}
-					<div class="flex flex-wrap gap-2">
-						{#each tags as tag}
-							<span
-								class="inline-flex items-center rounded-full bg-rose-100 px-2.5 py-1 text-xs font-medium text-rose-700 dark:bg-rose-900/30 dark:text-rose-300"
-							>
-								{tag}
-							</span>
-						{/each}
+				<div class="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+					<div class="flex items-center gap-1 text-sm text-gray-500 dark:text-gray-400">
+						<svg
+							class="h-3.5 w-3.5"
+							fill="currentColor"
+							viewBox="0 0 20 20"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+							<path
+								fill-rule="evenodd"
+								d="M.458 10C1.732 5.943 5.522 3 10 3s8.268 2.943 9.542 7c-1.274 4.057-5.064 7-9.542 7S1.732 14.057.458 10zM14 10a4 4 0 11-8 0 4 4 0 018 0z"
+								clip-rule="evenodd"
+							/>
+						</svg>
+						<span>{blogPost.visitCount.toLocaleString()} views</span>
 					</div>
-				{/if}
+
+					<!-- Tags -->
+					{#if tags.length > 0}
+						<div class="flex flex-wrap gap-2">
+							{#each tags as tag}
+								<span
+									class="inline-flex items-center rounded-full bg-rose-100 px-2.5 py-1 text-xs font-medium text-rose-700 dark:bg-rose-900/30 dark:text-rose-300"
+								>
+									{tag}
+								</span>
+							{/each}
+						</div>
+					{/if}
+				</div>
 			</div>
 		</header>
 
