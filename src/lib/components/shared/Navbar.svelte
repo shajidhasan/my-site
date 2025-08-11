@@ -87,7 +87,7 @@
 >
 	<div class="mx-auto max-w-4xl px-6 py-4">
 		<div class="flex items-center justify-between">
-			<a href="/" class="text-lg font-semibold text-gray-900 dark:text-gray-100">Shajid Hasan</a>
+			<a href="/" class="text-lg font-semibold text-gray-900 dark:text-gray-100">sh4jid</a>
 			<div class="flex items-center gap-4">
 				<div class="hidden gap-6 md:flex">
 					{#each sections as section}

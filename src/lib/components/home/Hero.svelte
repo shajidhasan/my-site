@@ -26,7 +26,7 @@
 	<div class="mx-auto max-w-4xl px-6">
 		<div class="max-w-2xl">
 			<h1 class="mb-6 text-3xl font-light text-gray-900 md:text-5xl dark:text-gray-50">
-				hello, i'm <span class="font-medium text-gray-900 dark:text-gray-50">sh4jid</span>
+				hello, i'm <span class="font-medium text-gray-900 dark:text-gray-50">shajid Hasan</span>
 			</h1>
 			<div class="mb-8 space-y-4 text-lg leading-relaxed text-gray-600 dark:text-gray-300">
 				<p>
